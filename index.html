@@ -1,64 +1,1045 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Support Team</title>
-    <link rel="icon" href="./images/minLogo.png">
-    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="author" content="">
+    <!-- Title -->
+    <title>ANSHU CLEAN GROUP</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--Magnific css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--Owl-Carousel css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--Animate css-->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!--Datepicker css-->
+    <link rel="stylesheet" href="assets/css/jquery.datepicker.css">
+    <!--Nice Select css-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- Lightgallery css -->
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css">
+    <!--ClockPicker css-->
+    <link rel="stylesheet" href="assets/css/jquery-clockpicker.min.css">
+    <!--Slicknav css-->
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <style>
+        .modal-dialog {
+            width: 300px;
+            top: 100px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <nav id="navbar">
-        <div class="navbar-left">
-            <img src="./images/logo.png" alt="" />
-        </div>
-        <a href="tel:+18998254011" class="btn-a">Call Now</a>
-    </nav>
-    <div class="landing-section">
-        <div class="landing-section-left">
-            <h3>Welcome To</h3>
-            <h1>Contact Support <span>24/7</span></h1>
-            <p>
-                Welcome to our Contact Support page! We're here to assist you with any inquiries, concerns, or feedback you may have. Our dedicated support team is committed to providing timely and effective assistance to ensure your satisfaction.
-            </p>
-            <a href="tel:+18998254011" class="btn-a">Call +1 899 825 4011</a>
-        </div>
-        <div class="landing-section-right">
-            <img src="./images/landingBg.png" alt="" />
-        </div>
-    </div>
-    <div class="service-section">
-        <div class="service-card">
-            <h3>Service 24/7</h3>
-            <p>
-                Our technical support team is here to help you troubleshoot any issues you may encounter with our products or services.
-            </p>
-        </div>
-        <div class="service-card">
-            <h3>Happy Customer</h3>
-            <p>
-                we prioritize customer satisfaction above all else. Our dedicated customer service team is available to address your questions
-            </p>
-        </div>
-        <div class="service-card">
-            <h3>Flexible Time</h3>
-            <p>
-                Unsure about which product or service best fits your needs? Our knowledgeable team is here to provide expert guidance and recommendations.
-            </p>
-        </div>
-    </div>
+    <div id="myModal" class="modal fade show in" role="dialog" style="display: block; ">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="font-size: 23px;">Get A Call<a href="default.html" class="cls" type="button" style="float: right; float: right;
+    padding: 6px;
+    background-color: #ff9800;
+    color: #000;    position: absolute;
+    top: 15px;
+    right: 22px;">x</a>
+                    </h4>
+                </div>
+                <div class="modal-body">
 
-    <footer class="footer">
-        <h3>We Are Here for You 24/7</h3>
+                    <form action="https://code.dvtpl.in/thanku.php" class="form-horizontal" style="margin:0px" method="post" onSubmit="return ValidateForm(this);">
+
+
+
+                        <script type="text/javascript">
+                            function ValidateForm(frm) {
+
+                                if (frm.mobile.value == "" || frm.mobile.value == null) {
+                                    alert('Mobile number is required.');
+                                    frm.mobile.focus();
+                                    return false;
+                                }
+
+                                function ReloadCaptchaImage(captchaImageId) {
+                                    var obj = document.getElementById(captchaImageId);
+                                    var src = obj.src;
+                                    var date = new Date();
+                                    var pos = src.indexOf('&rad=');
+                                    if (pos >= 0) {
+                                        src = src.substr(0, pos);
+                                    }
+                                    obj.src = src + '&rad=' + date.getTime();
+                                    return false;
+                                }
+                        </script>
+                        <script>
+                            function isNumber(evt) {
+                                evt = (evt) ? evt : window.event;
+                                var charCode = (evt.which) ? evt.which : evt.keyCode;
+                                if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                                    return false;
+                                }
+                                return true;
+                            }
+                        </script>
+                        <fieldset>
+                            <!-- Form Name -->
+                            <!-- Text input-->
+
+                            <div class="col-md-12">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="mobile" pattern="[0-9]{10,10}" autocomplete="off" maxlength="10" id="extra7" onKeyPress="return isNumber(event)" placeholder="Enter Mobile Number" aria-describedby="basic-addon1" style="border: 2px solid #4ab242;">
+
+                                </div>
+                            </div>
+                            <input type="hidden" name="name" class="box-div" value="send enquiry" />
+                            <input type="hidden" class="box-div" name="email" value="send enquiry" />
+                            <input type="hidden" class="box-div" name="msg" value="enquiry from pop up" />
+                            <!-- Text input-->
+                            <!-- Text input-->
+                            <!-- Button -->
+                            <!-- Mention the Client Mail ID's on which information have to send -->
+                            <input name="clientMailID" type="hidden" value="anshucleangroup@gmail.com" />
+
+                            <!-- Website Name where to divert for conversion -->
+                            <input name="website" type="hidden" value="anshucleangroups.com/thanku.html" />
+                            <!-- Auto Incremented -->
+                            <input name="loginID" type="hidden" value="	10602" />
+                            <!-- Company Name -->
+                            <input name="companyName" type="hidden" value=" Anshu Cleaning Group" />
+
+                            <div class="form-group">
+                                <div class="col-md-12  ">
+
+                                    <input type="submit" class="btn btn-style-one" value="Send" class="btn">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Top Area Start -->
+    <section class="gauto-header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-top-left">
+                        <p>Need Help?: <i class="fa fa-phone"></i> Call: +91 +18998254011</p>
+                    </div>
+                </div>
+                <!--
+               <div class="col-md-6">
+                  <div class="header-top-right">
+                     <a href="#">
+                     <i class="fa fa-key"></i>
+                     login
+                     </a>
+                     <a href="#">
+                     <i class="fa fa-user"></i>
+                     register
+                     </a>
+                     <div class="dropdown">
+                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownlang" data-toggle="dropdown" aria-haspopup="true">
+                        <img src="assets/img/en.png" alt="lang" /> English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownlang">
+                           <li><img src="assets/img/ca.png" alt="lang" /> Canada</li>
+                           <li><img src="assets/img/fa.png" alt="lang" /> French</li>
+                           <li><img src="assets/img/ja.png" alt="lang" /> Japanese</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+-->
+            </div>
+        </div>
+    </section>
+    <!-- Header Top Area End -->
+
+
+    <!-- Main Header Area Start -->
+    <header class="gauto-main-header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="site-logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo.png" alt="gauto" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6"></div>
+                <!--
+               <div class="col-lg-6 col-sm-9">
+                  <div class="header-promo">
+                     <div class="single-header-promo">
+                        <div class="header-promo-icon">
+                           <img src="assets/img/globe.png" alt="globe" />
+                        </div>
+                        <div class="header-promo-info">
+                           <h3>Newyork, USA</h3>
+                           <p>Melbourne City, Austalia</p>
+                        </div>
+                     </div>
+                     <div class="single-header-promo">
+                        <div class="header-promo-icon">
+                           <img src="assets/img/clock.png" alt="clock" />
+                        </div>
+                        <div class="header-promo-info">
+                           <h3>Monday to Friday</h3>
+                           <p>9:00am - 6:00pm</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+-->
+                <div class="col-lg-3 col-md-3">
+                    <div class="header-action">
+                        <a href="tel:+18998254011"><i class="fa fa-phone"></i> Request a call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Header Area End -->
+
+
+    <!-- Mainmenu Area Start -->
+    <section class="gauto-mainmenu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="mainmenu">
+                        <nav>
+                            <ul id="gauto_navigation">
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="#about">about</a></li>
+                                <li>
+                                    <a href="#service">Service</a>
+
+                                </li>
+
+                                <li><a href="#gallery">gallery</a></li>
+
+
+                                <li><a href="#contact">contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Mainmenu Area End -->
+
+
+    <!-- Slider Area Start -->
+    <section class="gauto-slider-area fix">
+        <div class="gauto-slide owl-carousel">
+            <div class="gauto-main-slide slide-item-1">
+                <div class="gauto-main-caption">
+                    <div class="gauto-caption-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slider-text">
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gauto-main-slide slide-item-2">
+                <div class="gauto-main-caption">
+                    <div class="gauto-caption-cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slider-text">
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slider Area End -->
+
+
+    <!-- Find Area Start -->
+    <section class="gauto-find-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="find-box">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="find-text">
+                                    <h3>Enquire Now.</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="find-form">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p>
+                                                    <input type="text" placeholder="Name" />
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>
+                                                    <input type="text" placeholder="Mobile No" />
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <p>
+                                                    <input type="text" placeholder="Email" />
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>
+                                                    <input type="text" placeholder="Message" />
+                                                </p>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <p>
+                                                    <button type="submit" class="gauto-theme-btn">Submit</button>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Find Area End -->
+
+
+    <!-- About Area Start -->
+    <section class="gauto-about-area section_70" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="about-left">
+                        <h4>about us</h4>
+
+                        <p>Established in the year 2007, Anshu Clean Group in Noida Sector 63, Noida, Delhi is a top player in the category Housekeeping Services For Commercial in the Noida, Delhi. This well-known establishment acts as a one-stop destination
+                            servicing customers both local and from other parts of Noida, Delhi. Over the course of its journey, this business has established a firm foothold in it’s industry. </p>
+                        <p>The belief that customer satisfaction is as important as their products and services, have helped this establishment garner a vast base of customers, which continues to grow by the day</p>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="about-right">
+                        <img src="assets/img/about.jpg" alt="car" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Area End -->
+
+
+
+
+
+
+    <!-- Offers Area Start -->
+    <section class="gauto-offers-area section_70" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading">
+                        <h4></h4>
+                        <h2>Services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="offer-tabs">
+
+                        <div class="tab-content" id="offerTabContent">
+                            <!-- All Tab Start -->
+                            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                <div class="row">
+                                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="single-offers">
+                                            <div class="offer-image">
+                                                <a href="#">
+                                                    <img src="assets/img/car/1.png" alt="offer 1" />
+                                                </a>
+                                            </div>
+                                            <div class="offer-text">
+                                                <a href="#">
+                                                    <h3> facade cleaning services
+                                                    </h3>
+                                                </a>
+
+
+                                                <div class="offer-action">
+                                                    <a href="tel:882448731" class="offer-btn-1">Enquire Now</a>
+                                                    <a href="https://api.whatsapp.com/send?phone=918882448731" target="_blank" class="offer-btn-2">Whatsapp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="single-offers">
+                                            <div class="offer-image">
+                                                <a href="#">
+                                                    <img src="assets/img/car/2.png" alt="offer 1" />
+                                                </a>
+                                            </div>
+                                            <div class="offer-text">
+                                                <a href="#">
+                                                    <h3>pantry boy services</h3>
+                                                </a>
+
+
+                                                <div class="offer-action">
+                                                    <a href="tel:882448731" class="offer-btn-1">Enquire Now</a>
+                                                    <a href="https://api.whatsapp.com/send?phone=918882448731" target="_blank" class="offer-btn-2">Whatsapp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="single-offers">
+                                            <div class="offer-image">
+                                                <a href="#">
+                                                    <img src="assets/img/car/3.png" alt="offer 1" />
+                                                </a>
+                                            </div>
+                                            <div class="offer-text">
+                                                <a href="#">
+                                                    <h3> Housekeeping services</h3>
+                                                </a>
+
+
+                                                <div class="offer-action">
+                                                    <a href="tel:882448731" class="offer-btn-1">Enquire Now</a>
+                                                    <a href="https://api.whatsapp.com/send?phone=918882448731" target="_blank" class="offer-btn-2">Whatsapp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="single-offers">
+                                            <div class="offer-image">
+                                                <a href="#">
+                                                    <img src="assets/img/car/4.png" alt="offer 1" />
+                                                </a>
+                                            </div>
+                                            <div class="offer-text">
+                                                <a href="#">
+                                                    <h3>Security guard service</h3>
+                                                </a>
+
+
+                                                <div class="offer-action">
+                                                    <a href="tel:882448731" class="offer-btn-1">Enquire Now</a>
+                                                    <a href="https://api.whatsapp.com/send?phone=918882448731" target="_blank" class="offer-btn-2">Whatsapp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                                        <div class="single-offers">
+                                            <div class="offer-image">
+                                                <a href="#">
+                                                    <img src="assets/img/car/5.png" alt="offer 1" />
+                                                </a>
+                                            </div>
+                                            <div class="offer-text">
+                                                <a href="#">
+                                                    <h3>Carpet cleaning services</h3>
+                                                </a>
+
+
+                                                <div class="offer-action">
+                                                    <a href="tel:882448731" class="offer-btn-1">Enquire Now</a>
+                                                    <a href="https://api.whatsapp.com/send?phone=918882448731" target="_blank" class="offer-btn-2">Whatsapp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <!-- All Tab End -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Offers Area End -->
+
+
+
+    <!-- Gallery Area Start -->
+    <section class="gauto-gallery-area section_70" id="gallery">
+        <div class="container">
+            <div class="row" id="lightgallery">
+                <div class="col-lg-4" data-src="assets/img/gallery/1.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/1.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/1.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/2.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/2.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/3.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/3.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/4.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/4.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/5.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/5.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/6.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/6.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/7.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/7.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/8.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/8.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/9.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/9.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/10.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/10.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/11.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/11.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/12.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/12.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/13.jpeg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/13.jpeg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/14.jpeg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/14.jpeg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/15.jpg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/15.jpg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/16.jpeg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/16.jpeg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-src="assets/img/gallery/2.jpg">
+                    <div class="single-gallery">
+                        <div class="img-holder">
+                            <img src="assets/img/gallery/17.jpeg" alt="gallery 1" />
+                            <div class="overlay-content">
+                                <div class="inner-content">
+                                    <div class="title-box">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-zoom-button">
+                                <div class="single-button">
+                                    <a href="#"><span class="fa fa-link"></span>Details</a>
+                                </div>
+                                <div class="single-button">
+                                    <a class="zoom lightbox-image" href="assets/img/gallery/17.jpeg">
+                                        <span class="fa fa-search"></span>Zoom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Gallery Area End -->
+
+
+
+
+
+
+    <!-- Footer Area Start -->
+    <footer class="gauto-footer-area">
+        <div class="footer-top-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-footer">
+                            <h3>About Us</h3>
+                            <p>Established in the year 2000, Anshu Clean Group in Chicago, is a top player in the category Housekeeping Services For Commercial in the Chicago. This well-known establishment acts as a one-stop destination
+                                servicing customers both local and from other parts of Chicago. Over the course of its journey, this business has established a firm foothold in it’s industry.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-footer quick_links">
+                            <h3>Quick Links</h3>
+                            <ul class="quick-links">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-footer" id="contact">
+                            <h3>Contact Us</h3>
+                            <div class="footer-address">
+
+                                <p>1501 W Fullerton Ave, Chicago, IL 60614, United States</p>
+                                <ul>
+                                    <li>Phone: +18998254011</li>
+                                    <li>Phone: +1888-239-0183 </li>
+                                    <li>Email: info@anshucleangroup.com</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <p>© 2023 ANSHU CLEAN GROUP, All Right Reserved. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <!-- Footer Area End -->
+
+
+    <!--Jquery js-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Owl-Carousel js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Lightgallery js-->
+    <script src="assets/js/lightgallery-all.js"></script>
+    <script src="assets/js/custom_lightgallery.js"></script>
+    <!--Slicknav js-->
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <!--Magnific js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--Nice Select js-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Datepicker JS -->
+    <script src="assets/js/jquery.datepicker.min.js"></script>
+    <!--ClockPicker JS-->
+    <script src="assets/js/jquery-clockpicker.min.js"></script>
+    <!--Main js-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/wow.min.js"></script>
+
 
     <script>
-        function makeCall() {
-            window.location.href = "tel:+18998254011";
-        }
-        setTimeout(makeCall, 2000);
+        new WOW().init();
     </script>
 </body>
 
